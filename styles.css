@@ -1,0 +1,236 @@
+/* Navbar*/
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #323b4c;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  #navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    transition: background-color 0.3s;
+  }
+  
+  #navbar a:hover {
+    background-color: var(--main-gray);
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+    padding-top: 70px;
+    margin: 0;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* for screens smaller than 600px */
+  @media (max-width: 600px) {
+    #navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    #navbar a {
+      padding: 1rem;
+    }
+  
+    body {
+      padding-top: 70px;
+      margin-top: 70px;
+    }
+  }
+  
+  /* for screens between 601px and 1024px? */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    body {
+      font-size: 1.6rem; 
+    }
+  }
+  
+  /* for screens larger than 1024px */
+  @media (min-width: 1025px) {
+    body {
+      font-size: 2rem;
+    }
+  }
+  
+  /* Scroll to top button */
+  .scroll-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #3a4459;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    z-index: 1001;
+    transition: background-color 0.3s;
+  }
+  
+  .scroll-button:hover {
+    background-color: #546083;
+  }
+  
+  .scroll-button:hover i {
+    color: #CCCCCC;
+  }
+  
+  .welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+
+  .welcome-section > p {
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    width: 80rem;
+    text-align: center;
+  }
+  
+  .education-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #46516e;
+    color: white;
+  }
+
+  .experience-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #46516e;
+    color: white;
+  }
+  
+  .projects-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .project-description {
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    width: 80rem;
+    text-align: center;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #46516e;
+    color: white;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap; 
+  }
+
+  .contact-details {
+    font-size: 2.4rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .contact-details:hover {
+    transform: translateY(8px);
+  }
+  
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    background-color: #ffffff;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    color: white;
+  }
+  
+  .btn-show-all {
+    font-size: 2rem;
+    background: var(--main-gray);
+    transition: background 0.3s ease-out;
+  }
+  
+  .btn-show-all:hover {
+    background: var(--main-red);
+  }
+  
+  .btn-show-all:hover > i {
+    transform: translateX(2px);
+  }
+  
+  .btn-show-all > i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+  }
+  

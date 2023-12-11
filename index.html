@@ -3,47 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tomasz Wąs - personal website">
+    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.png"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Tomasz Wąs - CV</title>
+    <title>Tomasz Wąs - portfolio</title>
 </head>
 <body>
+
     <!-- Navbar -->
     <nav id="navbar">
-        <a href="#welcome-section">Welcome</a>
-        <a href="#projects-section">Projects</a>
-        <a href="#education-section">Education</a>
-        <!-- Add more links for other sections as needed -->
-        <a id="profile-link" href="https://github.com/TomaszWs" target="_blank">GitHub Profile</a>
-        <a id="profile-link" href="https://www.freecodecamp.org/TomaszWs" target="_blank">FreeCodeCamp Profile</a>
+        <a href="#welcome-section"><i class="fas fa-door-open"></i> Welcome</a>
+        <a href="#education"><i class="fas fa-user-graduate"></i> Education</a>
+        <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+        <a href="#skills-section"><i class="fas fa-book-open"></i> Skills</a>
+        <a href="#projects"><i class="fas fa-laptop-code"></i> Project</a>
+        <a href="#contact-section"><i class="fas fa-address-book"></i> Contact</a>
     </nav>
+
     <!-- Welcome section -->
-    <section id="welcome-section">
-      <h1>Welcome</h1>  
+    <section id="welcome-section" class="welcome-section">
+      <h1><i class="fas fa-user"></i> Tomasz Wąs</h1>
+      <p>I am a student of English Philology specializing in Natural Language Processing. I have gained initial experience in languages such as Python and SQL. My areas of interest revolve around media analysis through corpus linguistics, sentiment analysis, and critical discourse analysis, which I have extensively explored in both my BA and MA theses. In my professional career, I aim to apply my skills and the knowledge I have acquired during my studies.</p>
     </section>
+
     <!-- Education section -->
-    <section id="education-section">
-      <h2>Education</h2>
-      <p>Insert your educational background here...</p>
+    <section id="education" class="education-section">
+        <h2><i class="fas fa-user-graduate"></i> Education</h2>
+        <div id="skills-slideshow" class="flex-container">
+            <div class="slide">
+                <i class="fas fa-graduation-cap"></i>
+                <p> University of Gdańsk</p>
+            </div>
+            <div class="slide">
+                <i class="fas fa-graduation-cap"></i>
+                <p> WSB</p>
+            </div>
+        </div>
     </section>
+
+    <!-- Experience -->
+    <section id="experience" class="experience-section">
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div id="skills-slideshow" class="flex-container">
+            <div class="slide">
+                <i class="fas fa-code"></i>
+                <p> Job</p>
+            </div>
+            <div class="slide">
+                <i class="fas fa-school"></i>
+                <p> job</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Skills section -->
-    <section id="skills-section">
-      <h2>Skills</h2>
-      <p>Insert your skills here...</p>
+    <section id="skills-section" class="skills-section">
+        <h2><i class="fas fa-book-open"></i> Skills</h2>
+        <div id="skills-slideshow" class="flex-container">
+            <div class="slide">
+                <i class="fab fa-python"></i>
+                <p>Python</p>
+            </div>
+            <div class="slide">
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+            </div>
+            <div class="slide">
+                <i class="fas fa-database"></i>
+                <p>SQL</p>
+            </div>
+            <div class="slide">
+                <i class="fas fa-language"></i>
+                <p>English C2</p>
+            </div>
+        </div>
     </section>
+
     <!-- Projects section -->
-    <section id="projects-section">
-      <h2>Projects</h2>
-      <div class="project-tile">
-        <h3>Project 1</h3>
-        <p>Description of Project 1</p>
-        <a href="https://github.com/TomaszWs" target="_blank">Project 1 on GitHub</a>
-      </div>
-      <!-- Add more project tiles as needed -->
+    <section id="projects" class="projects-tile">
+        <h2><i class="fas fa-laptop-code"></i> Project</h2>
+        <h3><a href="https://github.com/TomaszWs/Sentiment-analysis-in-newspapers" target="_blank">Sentiment analysis in newspapers</a></h3>
+        <p class="project-description">Program is meant to analyse the sentiment in newspapers using NLTK library. As an example, the current version is used to analyse an article from Fox News.</p>
     </section>
+
     <!-- Contact section -->
-    <section id="contact-section">
-      <h2>Contact</h2>
-      <p>Insert your contact information here...</p>
+    <section id="contact-section" class="contact-section">
+        <h2><i class="fas fa-address-book"></i> Contact</h2>
+        <div class="links">
+            <a href="https://github.com/TomaszWs" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:tomasz.p.was@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Email</a>
+            <a href="https://www.linkedin.com/in/tomasz-w%C4%85s-417ab4278?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHZ%2BwphdPR8y%2FHVyKJbljcQ%3D%3D" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="https://www.freecodecamp.org/TomaszWs" target="_blank" class="btn contact-details"><i class="fab fa-free-code-camp"></i> FreeCodeCamp</a>
+        </div>
     </section>
+    
+    <!-- Scroll to top button -->
+    <button id="scrollToTop" class="scroll-button"><i class="fas fa-arrow-up"></i> Go Up</button>
+    
+    <!-- Footer -->
+    <footer>
+        <p>Lorem ipsum etc.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('a[href^="#"]').on('click', function(event) {
+                var target = $(this.getAttribute('href'));
+                if (target.length) {
+                    event.preventDefault();
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                }
+            });
+            // Scroll to top button
+            $('#scrollToTop').on('click', function() {
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+            });
+        });
+    </script>
 </body>
 </html>
