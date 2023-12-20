@@ -18,7 +18,7 @@
         <a href="#education"><i class="fas fa-user-graduate"></i> Education</a>
         <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
         <a href="#skills-section"><i class="fas fa-book-open"></i> Skills</a>
-        <a href="#projects"><i class="fas fa-laptop-code"></i> Project</a>
+        <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
         <a href="#contact-section"><i class="fas fa-address-book"></i> Contact</a>
     </nav>
 
@@ -44,6 +44,11 @@
                 <h4>University of Gdańsk</h4>
                 <p>BA studies</p>
             </div>
+            <div class="mySlides">
+                <i class="fas fa-graduation-cap"></i>
+                <h3> IT studies | 2018 - 2020</h3>
+                <h4>Wyższa Szkoła Bankowa</h4>
+            </div>
             <!-- Next/prev buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -61,21 +66,53 @@
     <!-- Experience -->
     <section id="experience" class="experience-section">
         <h2><i class="fas fa-briefcase"></i> Experience</h2>
-        <div id="skills-slideshow" class="flex-container">
-            <div class="slide">
+        <div class="slideshow-container2">
+            <div class="mySlides2">
                 <i class="fas fa-code"></i>
-                <p> Job</p>
+                <h3>Samurai Labs | September 2023</h3>
+                <p>Professional practice<br/>
+                    Writing Python code<br/>
+                    Working with Reddit API<br/>
+                    Annotating<br/>
+                    Writing redular expressions</p>
             </div>
-            <div class="slide">
+            <div class="mySlides2">
                 <i class="fas fa-school"></i>
-                <p> job</p>
+                <h3>Szkoła Podstawowa im. Ignacego Krasickiego w Straszynie | 
+                    Feb - March 2022</h3>
+                <p>Didactic practice<br/>
+                    Teaching classes<br/>
+                    Preparing lesson outlines</p>
             </div>
-        </div>
+            <div class="mySlides2">
+                <i class="fas fa-school"></i>
+                <h3>Zespół Szkolno Przedszkolny w Borkowie | February 2020</h3>
+                <p>Professional practice<br/>
+                    Assisting teacher's work (materials preparation, helping students in learning)<br/>
+                    Organization of school competition</p>
+            </div>
+            <div class="mySlides2">
+                <i class="fas fa-store"></i>
+                <h3>Stokrotka shop in Borkowo | April - September 2019</h3>
+                <p>Customer service<br/>
+                    Cash register handling<br/>
+                    Inventory management</p>
+            </div>
+            <!-- Next/prev buttons -->
+            <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+          </div>
+          <!-- Dots/bullets/indicators -->
+          <div class="dot-container2">
+            <span class="dot2" onclick="currentSlide2(1)"></span>
+            <span class="dot2" onclick="currentSlide2(2)"></span>
+            <span class="dot2" onclick="currentSlide2(3)"></span>
+          </div> 
     </section>
 
     <!-- Skills section -->
     <section id="skills-section" class="skills-section">
-        <h2><i class="fas fa-book-open"></i> Skills</h2>
+        <h2><i class="fas fa-book-open"></i> Expertise</h2>
         <div id="skills-slideshow" class="flex-container">
             <div class="slide">
                 <i class="fab fa-python"></i>
@@ -83,7 +120,7 @@
             </div>
             <div class="slide">
                 <i class="fab fa-html5"></i>
-                <p>HTML</p>
+                <p>HTML & CSS</p>
             </div>
             <div class="slide">
                 <i class="fas fa-database"></i>
@@ -98,11 +135,13 @@
 
     <!-- Projects section -->
     <section id="projects" class="projects-tile">
-        <h2><i class="fas fa-laptop-code"></i> Project</h2>
+        <h2><i class="fas fa-laptop-code"></i> Projects</h2>
         <h3><a href="https://github.com/TomaszWs/Sentiment-analysis-in-newspapers" target="_blank">Sentiment analysis in newspapers</a></h3>
         <p class="project-description">Program is meant to analyse the sentiment in newspapers using NLTK library. As an example, the current version is used to analyse an article from Fox News.</p>
     </section>
 
+      <!-- Education content here... -->
+  </section>
     <!-- Contact section -->
     <section id="contact-section" class="contact-section">
         <h2><i class="fas fa-address-book"></i> Contact</h2>
@@ -119,7 +158,7 @@
     
     <!-- Footer -->
     <footer>
-        <p>tomasz.p.was@gmail.com</p>
+        <p><i class="far fa-envelope"></i> tomasz.p.was@gmail.com</p>
     </footer>
 
     <!-- Scripts -->
@@ -157,6 +196,35 @@ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+    </script>
+    <!-- Slideshow 2 -->
+       <script>
+        var slideIndex = 1;
+showSlides2(slideIndex);
+
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+
+function currentSlide2(n) {
+  showSlides2(slideIndex = n);
+}
+
+function showSlides2(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot2");
   if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
