@@ -1,241 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tomasz Wąs - personal website">
-    <!-- <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="favicon.png"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="./styles.css">
     <title>Tomasz Wąs - portfolio</title>
-</head>
-<body>
+  </head>
 
-    <!-- Navbar -->
+  <body>
+
     <nav id="navbar">
-        <a href="#welcome-section"><i class="fas fa-door-open"></i> Welcome</a>
-        <a href="#education"><i class="fas fa-user-graduate"></i> Education</a>
-        <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
-        <a href="#skills-section"><i class="fas fa-book-open"></i> Skills</a>
-        <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
-        <a href="#contact-section"><i class="fas fa-address-book"></i> Contact</a>
+      <a href="#welcome-section"><i class="fas fa-door-open"></i> Welcome</a>
+      <a href="#education"><i class="fas fa-user-graduate"></i> Education</a>
+      <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+      <a href="#skills-section"><i class="fas fa-book-open"></i> Skills</a>
+      <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
+      <a href="#contact-section"><i class="fas fa-address-book"></i> Contact</a>
     </nav>
 
-    <!-- Welcome section -->
     <section id="welcome-section" class="welcome-section">
       <h1><i class="fas fa-user"></i> Tomasz Wąs</h1>
       <p>I am a student of English Philology specializing in Natural Language Processing. I have gained initial experience in languages such as Python and SQL. My areas of interest revolve around media analysis through corpus linguistics, sentiment analysis, and critical discourse analysis, which I have extensively explored in both my BA and MA theses. In my professional career, I aim to apply my skills and the knowledge I have acquired during my studies.</p>
     </section>
 
-    <!-- Education section -->
     <section id="education" class="education-section">
-        <h2><i class="fas fa-user-graduate"></i> Education</h2>
-        <div class="slideshow-container">
-            <div class="mySlides">
-                <i class="fas fa-graduation-cap"></i>
-                <h3> English Philology, Natural Language Processing | 2022 - 2024</h3>
-                <h4>University of Gdańsk</h4>
-                <p>Master's studies</p>
-            </div>
-            <div class="mySlides">
-                <i class="fas fa-graduation-cap"></i>
-                <h3> English Philology, Teaching specialization | 2019 - 2022</h3>
-                <h4>University of Gdańsk</h4>
-                <p>BA studies</p>
-            </div>
-            <div class="mySlides">
-                <i class="fas fa-graduation-cap"></i>
-                <h3> IT studies | 2018 - 2020</h3>
-                <h4>Wyższa Szkoła Bankowa</h4>
-            </div>
-            <!-- Next/prev buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <!-- Dots/bullets/indicators -->
-          <div class="dot-container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div> 
+      <h2><i class="fas fa-user-graduate"></i> Education</h2>
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <i class="fas fa-graduation-cap"></i>
+          <h3> English Philology, Natural Language Processing | 2022 - 2024</h3>
+          <h4>University of Gdańsk</h4>
+          <p>Master's studies</p>
+        </div>
+        <div class="mySlides">
+          <i class="fas fa-graduation-cap"></i>
+          <h3> English Philology, Teaching specialization | 2019 - 2022</h3>
+          <h4>University of Gdańsk</h4>
+          <p>BA studies</p>
+        </div>
+        <div class="mySlides">
+          <i class="fas fa-graduation-cap"></i>
+          <h3> IT studies | 2018 - 2020</h3>
+          <h4>Wyższa Szkoła Bankowa</h4>
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+        <div class="dot-container">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
     </section>
 
-     <!-- Slideshow container -->
-
-    <!-- Experience -->
     <section id="experience" class="experience-section">
-        <h2><i class="fas fa-briefcase"></i> Experience</h2>
-        <div class="slideshow-container2">
-            <div class="mySlides2">
-                <i class="fas fa-code"></i>
-                <h3>Samurai Labs | September 2023</h3>
-                <p>Professional practice<br/>
-                    Writing Python code<br/>
-                    Working with Reddit API<br/>
-                    Annotating<br/>
-                    Writing redular expressions</p>
-            </div>
-            <div class="mySlides2">
-                <i class="fas fa-school"></i>
-                <h3>Szkoła Podstawowa im. Ignacego Krasickiego w Straszynie | 
-                    Feb - March 2022</h3>
-                <p>Didactic practice<br/>
-                    Teaching classes<br/>
-                    Preparing lesson outlines</p>
-            </div>
-            <div class="mySlides2">
-                <i class="fas fa-school"></i>
-                <h3>Zespół Szkolno Przedszkolny w Borkowie | February 2020</h3>
-                <p>Professional practice<br/>
-                    Assisting teacher's work (materials preparation, helping students in learning)<br/>
-                    Organization of school competition</p>
-            </div>
-            <div class="mySlides2">
-                <i class="fas fa-store"></i>
-                <h3>Stokrotka shop in Borkowo | April - September 2019</h3>
-                <p>Customer service<br/>
-                    Cash register handling<br/>
-                    Inventory management</p>
-            </div>
-            <!-- Next/prev buttons -->
-            <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
-            <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
-          </div>
-          <!-- Dots/bullets/indicators -->
-          <div class="dot-container2">
-            <span class="dot2" onclick="currentSlide2(1)"></span>
-            <span class="dot2" onclick="currentSlide2(2)"></span>
-            <span class="dot2" onclick="currentSlide2(3)"></span>
-          </div> 
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
+      <div class="slideshow-container2">
+        <div class="mySlides2">
+          <i class="fas fa-code"></i>
+          <h3>Samurai Labs | September 2023</h3>
+          <p>Professional practice<br />
+            Writing Python code<br />
+            Working with Reddit API<br />
+            Annotating<br />
+            Writing redular expressions</p>
+        </div>
+        <div class="mySlides2">
+          <i class="fas fa-school"></i>
+          <h3>Szkoła Podstawowa im. Ignacego Krasickiego w Straszynie |
+            Feb - March 2022</h3>
+          <p>Didactic practice<br />
+            Teaching classes<br />
+            Preparing lesson outlines</p>
+        </div>
+        <div class="mySlides2">
+          <i class="fas fa-school"></i>
+          <h3>Zespół Szkolno Przedszkolny w Borkowie | February 2020</h3>
+          <p>Professional practice<br />
+            Assisting teacher's work (materials preparation, helping students in learning)<br />
+            Organization of school competition</p>
+        </div>
+        <div class="mySlides2">
+          <i class="fas fa-store"></i>
+          <h3>Stokrotka shop in Borkowo | April - September 2019</h3>
+          <p>Customer service<br />
+            Cash register handling<br />
+            Inventory management</p>
+        </div>
+        <a class="prev2">&#10094;</a>
+        <a class="next2">&#10095;</a>
+        <div class="dot-container2">
+          <span class="dot2"></span>
+          <span class="dot2"></span>
+          <span class="dot2"></span>
+          <span class="dot2"></span>
+        </div>
+      </div>
     </section>
 
-    <!-- Skills section -->
     <section id="skills-section" class="skills-section">
-        <h2><i class="fas fa-book-open"></i> Expertise</h2>
-        <div id="skills-slideshow" class="flex-container">
-            <div class="slide">
-                <i class="fab fa-python"></i>
-                <p>Python</p>
-            </div>
-            <div class="slide">
-                <i class="fab fa-html5"></i>
-                <p>HTML & CSS</p>
-            </div>
-            <div class="slide">
-                <i class="fas fa-database"></i>
-                <p>SQL</p>
-            </div>
-            <div class="slide">
-                <i class="fas fa-language"></i>
-                <p>English C2</p>
-            </div>
+      <h2><i class="fas fa-book-open"></i> Expertise</h2>
+      <div id="skills-slideshow" class="flex-container">
+        <div class="slide">
+          <i class="fab fa-python"></i>
+          <p>Python</p>
         </div>
+        <div class="slide">
+          <i class="fab fa-html5"></i>
+          <p>HTML & CSS</p>
+        </div>
+        <div class="slide">
+          <i class="fas fa-database"></i>
+          <p>SQL</p>
+        </div>
+        <div class="slide">
+          <i class="fas fa-language"></i>
+          <p>English C2</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects section -->
     <section id="projects" class="projects-tile">
-        <h2><i class="fas fa-laptop-code"></i> Projects</h2>
-        <h3><a href="https://github.com/TomaszWs/Sentiment-analysis-in-newspapers" target="_blank">Sentiment analysis in newspapers</a></h3>
-        <p class="project-description">Program is meant to analyse the sentiment in newspapers using NLTK library. As an example, the current version is used to analyse an article from Fox News.</p>
+      <h2><i class="fas fa-laptop-code"></i> Projects</h2>
+      <h3><a href="https://github.com/TomaszWs/Sentiment-analysis-in-newspapers" target="_blank">Sentiment analysis in newspapers</a></h3>
+      <p class="project-description">Program is meant to analyse the sentiment in newspapers using NLTK library. As an example, the current version is used to analyse an article from Fox News.</p>
     </section>
 
-      <!-- Education content here... -->
-  </section>
-    <!-- Contact section -->
     <section id="contact-section" class="contact-section">
-        <h2><i class="fas fa-address-book"></i> Contact</h2>
-        <div class="links">
-            <a href="https://github.com/TomaszWs" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
-            <a href="mailto:tomasz.p.was@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Email</a>
-            <a href="https://www.linkedin.com/in/tomasz-w%C4%85s-417ab4278?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHZ%2BwphdPR8y%2FHVyKJbljcQ%3D%3D" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> Linkedin</a>
-            <a href="https://www.freecodecamp.org/TomaszWs" target="_blank" class="btn contact-details"><i class="fab fa-free-code-camp"></i> FreeCodeCamp</a>
-        </div>
+      <h2><i class="fas fa-address-book"></i> Contact</h2>
+      <div class="links">
+        <a href="https://github.com/TomaszWs" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+        <a href="mailto:tomasz.p.was@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Email</a>
+        <a href="https://www.linkedin.com/in/tomasz-w%C4%85s-417ab4278?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHZ%2BwphdPR8y%2FHVyKJbljcQ%3D%3D" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="https://www.freecodecamp.org/TomaszWs" target="_blank" class="btn contact-details"><i class="fab fa-free-code-camp"></i> FreeCodeCamp</a>
+      </div>
     </section>
-    
-    <!-- Scroll to top button -->
+
     <button id="scrollToTop" class="scroll-button"><i class="fas fa-arrow-up"></i> Go Up</button>
-    
-    <!-- Footer -->
+
     <footer>
-        <p><i class="far fa-envelope"></i> tomasz.p.was@gmail.com</p>
+      <p><i class="far fa-envelope"></i> tomasz.p.was@gmail.com</p>
     </footer>
-
-    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('a[href^="#"]').on('click', function(event) {
-                var target = $(this.getAttribute('href'));
-                if (target.length) {
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                }
-            });
-            // Scroll to top button
-            $('#scrollToTop').on('click', function() {
-                $('html, body').animate({ scrollTop: 0 }, 'slow');
-            });
-        });
-    </script>
-    <script>
-        var slideIndex = 1;
-showSlides(slideIndex);
+    <script src="script.js"></script>
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  </body>
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
-    </script>
-    <!-- Slideshow 2 -->
-       <script>
-        var slideIndex = 1;
-showSlides2(slideIndex);
-
-function plusSlides2(n) {
-  showSlides2(slideIndex += n);
-}
-
-function currentSlide2(n) {
-  showSlides2(slideIndex = n);
-}
-
-function showSlides2(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides2");
-  var dots = document.getElementsByClassName("dot2");
-  if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
-    </script>
-</body>
 </html>
